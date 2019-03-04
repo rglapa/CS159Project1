@@ -12,7 +12,7 @@ int main() {
             printf("child %d\n", i);
             fflush(stdout);
         } else {
-            wait(0);
+            wait(NULL);
             printf("parent %d\n", i);
             fflush(stdout);
         }

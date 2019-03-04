@@ -11,7 +11,7 @@ int main() {
         } else if(pid == 0) {
             printf("child %d\n", i);
         } else {
-            wait(0);
+            wait(NULL);
             printf("parent %d\n", i);
         }
     }
